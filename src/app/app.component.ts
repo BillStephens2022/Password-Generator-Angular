@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Password-Generator-Angular';
+  onButtonClick() {
+    console.log('Button was clicked');
+  }
 }
