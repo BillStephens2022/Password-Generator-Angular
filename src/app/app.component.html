@@ -42,6 +42,7 @@
       </button>
 
       <!-- conditionally render the below html element when the password has been generated -->
+      <!-- note: the password property is initially set as '' (empty string) which is falsy-->
       <div class="box" *ngIf="password">
         <label>Your Password</label>
         <input class="input" [value]="password" />
