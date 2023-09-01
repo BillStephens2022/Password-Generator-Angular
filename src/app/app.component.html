@@ -41,7 +41,8 @@
         Generate!
       </button>
 
-      <div class="box">
+      <!-- conditionally render the below html element when the password has been generated -->
+      <div class="box" *ngIf="password">
         <label>Your Password</label>
         <input class="input" [value]="password" />
       </div>
